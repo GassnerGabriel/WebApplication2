@@ -32,7 +32,7 @@ namespace WebApplication2.Controllers
         // POST: Carro/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(CarroModel collection)
         {
             try
             {
