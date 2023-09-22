@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication2.Models;
 
 namespace WebApplication2.Controllers
 {
@@ -12,14 +13,14 @@ namespace WebApplication2.Controllers
         // GET: Carro
         public ActionResult Index()
         {
-            return View(CarroModel.CriarCarro());
+            return View(CarroModel.CriarLista());
         }
 
         // GET: Carro/Details/5
         public ActionResult Details(int id)
         {
             var carro = CarroModel.CriarLista()[id];
-            return View(aluno);
+            return View(carro);
         }
 
         // GET: Carro/Create
